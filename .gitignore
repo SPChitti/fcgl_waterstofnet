@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large generated files
+Maps/batch_routes/
+Maps/*.html
+*.html
+
+# Keep only the aggregate maps (can regenerate)
+!Maps/belgium_locations_map.html
+
+# Logs
+*.log
+nohup.out
+
+# Data files - keep small ones
+*.csv
+!Data/master_locations.csv
+!Data/truck_fleet_config.yaml
+
+# GraphHopper data
+graphhopper-web-*.jar
+graph-cache/
+*.osm.pbf
+srtm/
+
+# System files
+.DS_Store
+Thumbs.db

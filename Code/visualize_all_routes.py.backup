@@ -1,0 +1,272 @@
+#!/usr/bin/env python3
+"""
+Create aggregate visualization map showing all generated routes.
+Displays the entire Belgium logistics network on a single interactive map.
+"""
+
+import json
+import os
+import sys
+import folium
+from typing import List, Dict
+import pandas as pd
+
+def load_all_route_files(routes_dir: str) -> List[Dict]:
+    """
+    Load all route JSON files from directory.
+    
+    Args:
+        routes_dir: Directory containing route JSON files
+    
+    Returns:
+        List of route data dictionaries
+    """
+    all_routes = []
+    
+    json_files = [f for f in os.listdir(routes_dir) if f.endswith('.json') and not f.startswith('batch_summary') and not f.startswith('failed_pairs')]
+    
+    print(f"Found {len(json_files)} route files")
+    print("Loading routes...")
+    
+    for i, filename in enumerate(json_files, 1):
+        if i % 50 == 0:
+            print(f"  Loaded {i}/{len(json_files)}...")
+        
+        filepath = os.path.join(routes_dir, filename)
+        try:
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+                all_routes.append(data)
+        except Exception as e:
+            print(f"  ⚠️  Error loading {filename}: {e}")
+            continue
+    
+    print(f"✓ Loaded {len(all_routes)} route files\n")
+    return all_routes
+
+def create_aggregate_map(
+    all_routes: List[Dict],
+    output_path: str,
+    show_alternative: int = 1,
+    color_mode: str = "slope",
+    line_weight: int = 2
+):
+    """
+    Create single map with all routes overlaid.
+    
+    Args:
+        all_routes: List of route data dictionaries
+        output_path: Path to save HTML map
+        show_alternative: Which alternative to show (1, 2, 3, etc.)
+        color_mode: 'slope' for terrain colors or 'origin' for source-based colors
+        line_weight: Line thickness (1-5, thinner for many routes)
+    """
+    print("="*80)
+    print(f"Creating Aggregate Network Map")
+    print(f"Routes: {len(all_routes)} OD pairs")
+    print(f"Alternative: {show_alternative}")
+    print(f"Color mode: {color_mode}")
+    print(f"Line weight: {line_weight}")
+    print("="*80 + "\n")
+    
+    # Belgium center coordinates
+    belgium_center = [50.5039, 4.4699]
+    
+    # Create base map
+    m = folium.Map(
+        location=belgium_center,
+        zoom_start=8,
+        tiles='OpenStreetMap'
+    )
+    
+    # Get unique origins for color assignment
+    origins = list(set([r['source'] for r in all_routes]))
+    origin_colors = {}
+    colors_palette = [
+        '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
+        '#1abc9c', '#e67e22', '#34495e', '#16a085', '#c0392b',
+        '#27ae60', '#2980b9', '#8e44ad', '#d35400', '#c0392b',
+        '#7f8c8d', '#2c3e50', '#f1c40f'
+    ]
+    
+    for i, origin in enumerate(origins):
+        origin_colors[origin] = colors_palette[i % len(colors_palette)]
+    
+    total_segments = 0
+    routes_plotted = 0
+    
+    print("Drawing routes on map...")
+    
+    for idx, route_data in enumerate(all_routes):
+        if (idx + 1) % 50 == 0:
+            print(f"  Processed {idx + 1}/{len(all_routes)}...")
+        
+        # Get the specified alternative
+        routes = route_data.get('routes', [])
+        if show_alternative > len(routes):
+            continue
+        
+        route = routes[show_alternative - 1]
+        
+        points = route["path"]["points"]["coordinates"]
+        details = route["path"].get("details", {})
+        
+        if color_mode == "slope":
+            # Draw with slope-based colors
+            avg_slopes = details.get("average_slope", [])
+            environments = details.get("road_environment", [])
+            
+            slope_map = {}
+            for seg in avg_slopes:
+                start_idx, end_idx, slope_val = seg[0], seg[1], seg[2]
+                for i in range(start_idx, end_idx):
+                    slope_map[i] = slope_val
+            
+            tunnel_map = {}
+            for seg in environments:
+                start_idx, end_idx, env_type = seg[0], seg[1], seg[2]
+                if env_type == "tunnel":
+                    for i in range(start_idx, end_idx):
+                        tunnel_map[i] = True
+            
+            for i in range(len(points) - 1):
+                p1 = points[i]
+                p2 = points[i + 1]
+                coords = [[p1[1], p1[0]], [p2[1], p2[0]]]
+                
+                slope = slope_map.get(i, 0)
+                is_tunnel = tunnel_map.get(i, False)
+                
+                if is_tunnel:
+                    color = '#5b2c6f'  # Darker purple
+                    opacity = 0.85
+                elif slope > 2:
+                    color = '#a93226'  # Darker red
+                    opacity = 0.8
+                elif slope < -2:
+                    color = '#196f3d'  # Darker green
+                    opacity = 0.75
+                else:
+                    color = '#1a5490'  # Darker blue
+                    opacity = 0.65
+                
+                folium.PolyLine(
+                    coords,
+                    color=color,
+                    weight=line_weight + 1,  # Slightly thicker
+                    opacity=opacity
+                ).add_to(m)
+                
+                total_segments += 1
+        
+        else:  # origin mode
+            # Single color per origin city
+            origin = route_data['source']
+            color = origin_colors.get(origin, '#2471a3')
+            
+            coords = [[p[1], p[0]] for p in points]
+            
+            # Add destination markers for this route
+            dest_lat = route_data['destination_coords'][0]
+            dest_lon = route_data['destination_coords'][1]
+            
+            folium.PolyLine(
+                coords,
+                color=color,
+                weight=line_weight + 1,
+                opacity=0.7,
+                tooltip=f"{route_data['source']} → {route_data['destination']}"
+            ).add_to(m)
+            
+            total_segments += len(points) - 1
+        
+        routes_plotted += 1
+    
+    # Add legend
+    if color_mode == "slope":
+        legend_html = '''
+        <div style="position: fixed; 
+                    bottom: 50px; left: 50px; width: 240px; 
+                    background-color: white; border:3px solid #2c3e50; z-index:9999; 
+                    font-size:13px; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+            <h4 style="margin-top:0; color: #2c3e50;">Belgium Logistics Network</h4>
+            <p style="color: #34495e;"><b>{} routes (Alternative {})</b></p>
+            <p style="color: #7f8c8d; font-size: 11px;">{:,} total segments</p>
+            <hr style="border: 1px solid #ecf0f1; margin: 10px 0;">
+            <p style="margin: 8px 0; font-weight: bold; color: #2c3e50;">Terrain Colors:</p>
+            <p style="margin: 4px 0;"><span style="color: #a93226; font-size: 18px;">━━━</span> <b>Ascent</b> (>2%)</p>
+            <p style="margin: 4px 0;"><span style="color: #196f3d; font-size: 18px;">━━━</span> <b>Descent</b> (<-2%)</p>
+            <p style="margin: 4px 0;"><span style="color: #1a5490; font-size: 18px;">━━━</span> <b>Flat</b> (±2%)</p>
+            <p style="margin: 4px 0;"><span style="color: #5b2c6f; font-size: 18px;">━━━</span> <b>Tunnel</b></p>
+        </div>
+        '''.format(routes_plotted, show_alternative, total_segments)
+    else:
+        # Origin-based legend (showing top 10 origins)
+        legend_items = ''.join([
+            f'<p style="margin: 2px 0;"><span style="color: {origin_colors[o]};">━━━</span> {o}</p>'
+            for o in sorted(origins)[:10]
+        ])
+        legend_html = f'''
+        <div style="position: fixed; 
+                    bottom: 50px; left: 50px; width: 220px; max-height: 400px; overflow-y: auto;
+                    background-color: white; border:2px solid grey; z-index:9999; 
+                    font-size:12px; padding: 10px; border-radius: 5px;">
+            <h4 style="margin-top:0;">Belgium Logistics Network</h4>
+            <p><b>{routes_plotted} routes (Alternative {show_alternative})</b></p>
+            <p style="margin: 5px 0;"><b>Origins (top 10):</b></p>
+            {legend_items}
+            <p style="font-size: 10px; color: #7f8c8d; margin-top: 5px;">...and {len(origins)-10} more</p>
+        </div>
+        '''
+    
+    m.get_root().html.add_child(folium.Element(legend_html))
+    
+    # Save map
+    m.save(output_path)
+    
+    print(f"\n✓ Map created successfully!")
+    print(f"  Routes plotted: {routes_plotted}")
+    print(f"  Total segments: {total_segments:,}")
+    print(f"  Output: {output_path}")
+    print("="*80 + "\n")
+
+def main():
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Create aggregate visualization of all routes")
+    parser.add_argument("--routes-dir", default="../Maps/batch_routes",
+                       help="Directory containing route JSON files")
+    parser.add_argument("--output", default="../Maps/aggregate_network_map.html",
+                       help="Output HTML file path")
+    parser.add_argument("--alternative", type=int, default=1,
+                       help="Which alternative route to show (1, 2, 3, etc.)")
+    parser.add_argument("--color-mode", default="slope", ch3,
+                       help="Line thickness (1-5, use 2-3ain or 'origin' for source city")
+    parser.add_argument("--line-weight", type=int, default=2,
+                       help="Line thickness (1-5, use 1-2 for many routes)")
+    
+    args = parser.parse_args()
+    
+    if not os.path.exists(args.routes_dir):
+        print(f"❌ Error: Routes directory not found: {args.routes_dir}")
+        print("Run batch_generate_routes.py first!")
+        sys.exit(1)
+    
+    # Load all routes
+    all_routes = load_all_route_files(args.routes_dir)
+    
+    if not all_routes:
+        print("❌ Error: No route files found")
+        sys.exit(1)
+    
+    # Create aggregate map
+    create_aggregate_map(
+        all_routes=all_routes,
+        output_path=args.output,
+        show_alternative=args.alternative,
+        color_mode=args.color_mode,
+        line_weight=args.line_weight
+    )
+
+if __name__ == "__main__":
+    main()

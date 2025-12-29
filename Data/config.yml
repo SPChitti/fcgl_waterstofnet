@@ -1,0 +1,73 @@
+graphhopper:
+  # OSM input file
+  datareader.file: belgium-latest.osm.pbf
+  
+  # Directory for processed graph data
+  graph.location: graph-cache
+  
+  # Encoded values needed for custom models
+  graph.encoded_values: road_class, road_access, max_slope, road_environment, max_speed, surface, average_slope
+  
+  # Data access mode
+  graph.dataaccess: RAM_STORE
+  
+  # Enable elevation for slope calculations
+  graph.elevation.provider: srtm
+  graph.elevation.cache_dir: elevation
+  graph.elevation.dataaccess: MMAP
+  
+  # Belgium bounds (approximate) for elevation data
+  # Flanders: 50.5-51.5°N, 2.5-6°E
+  graph.elevation.calc_mean_sea_level: true
+  
+  # Define vehicle profiles for different truck types
+  # These will be used for FCGL vehicle-specific routing
+  profiles:
+    # Diesel truck profile - standard freight
+    - name: truck_diesel
+      custom_model_files: [truck_diesel.json]
+    
+    # Electric truck profile - range-constrained, avoids steep slopes
+    - name: truck_ev
+      custom_model_files: [truck_ev.json]
+    
+    # Hydrogen truck profile - similar to diesel but with refueling constraints
+    - name: truck_h2
+      custom_model_files: [truck_h2.json]
+  
+  # Profile-specific settings for Contraction Hierarchies
+  profiles_ch:
+    - profile: truck_diesel
+    - profile: truck_ev
+    - profile: truck_h2
+  
+  # Web API configuration
+  server:
+    application_connectors:
+      - type: http
+        port: 8989
+        bind_host: 0.0.0.0
+    
+    admin_connectors:
+      - type: http
+        port: 8990
+        bind_host: 0.0.0.0
+  
+  # Enable detailed route instructions
+  routing.instructions: true
+  
+  # Enable path details for edge attribution
+  routing.details.enabled: true
+  
+  # Routing parameters
+  routing.max_visited_nodes: 1000000
+  routing.non_ch.max_waypoint_distance: 1000000
+  
+  # Import settings
+  datareader.preferred_language: en,nl,fr
+  
+  # OSM tag filtering for truck routing
+  import.osm.ignored_highways: footway,cycleway,path,pedestrian,steps
+  
+  # Logging
+  logging.config: ./logging.properties

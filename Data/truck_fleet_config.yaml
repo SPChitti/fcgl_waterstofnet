@@ -1,0 +1,201 @@
+# Master Truck Fleet Configuration for FCGL Belgium Logistics
+# This file defines all truck types and their characteristics
+# When modified, run: ./rebuild_graphhopper.sh
+
+truck_types:
+  
+  diesel:
+    name: "truck_diesel"
+    description: "Standard diesel heavy freight truck"
+    
+    # Physical/operational characteristics (for FCGL energy models)
+    physical:
+      fuel_type: "diesel"
+      range_km: 1200
+      tank_capacity_liters: 400
+      refuel_time_minutes: 7
+      fuel_consumption_l_per_100km: 30
+      cargo_capacity_kg:
+        small: 8000    # Light cargo / urban delivery
+        medium: 15000  # Regional distribution
+        large: 24000   # Long-haul heavy freight
+      
+    # Routing behavior (GraphHopper custom model)
+    routing:
+      distance_influence: 70
+      
+      priority:
+        - condition: "average_slope > 12"
+          multiply_by: 0.98
+          reason: "Very steep uphill - minimal penalty (powerful engine)"
+        
+        - condition: "road_class == MOTORWAY"
+          multiply_by: 1.2
+          reason: "Prefer highways for efficiency"
+        
+        - condition: "road_class == PRIMARY || road_class == SECONDARY"
+          multiply_by: 1.1
+          reason: "Good main roads"
+        
+        - condition: "road_access == DESTINATION"
+          multiply_by: 0.1
+          reason: "Avoid destination-only roads"
+        
+        - default: true
+          multiply_by: 1.0
+      
+      speed_limits:
+        - condition: "road_class == MOTORWAY"
+          limit_to: 90
+        
+        - condition: "road_class == PRIMARY"
+          limit_to: 80
+        
+        - condition: "road_class == SECONDARY"
+          limit_to: 70
+        
+        - default: true
+          limit_to: 50
+  
+  
+  electric:
+    name: "truck_ev"
+    description: "Battery-electric truck - uphill-sensitive, urban-challenged"
+    
+    # Physical/operational characteristics
+    physical:
+      fuel_type: "battery_electric"
+      range_km: 300
+      battery_capacity_kwh: 450
+      usable_battery_percent: 60  # 20%-80% fast charge window
+      recharge_time_minutes: 90  # Fast charge (150kW)
+      recharge_time_slow_minutes: 480  # Overnight AC/DC
+      energy_consumption_kwh_per_km: 1.5
+      cargo_capacity_kg:
+        small: 7500    # Battery weight reduces capacity
+        medium: 14000  # Regional distribution
+        large: 22000   # Heavy freight (limited by battery weight)
+      
+    # Routing behavior - uphill penalties, downhill preference (regen)
+    routing:
+      distance_influence: 70
+      
+      priority:
+        - condition: "average_slope > 8"
+          multiply_by: 0.4
+          reason: "Steep uphill drains battery significantly"
+        
+        - condition: "average_slope > 5"
+          multiply_by: 0.7
+          reason: "Moderate uphill increases energy consumption"
+        
+        - condition: "average_slope < -5"
+          multiply_by: 1.05
+          reason: "Downhill preferred (regenerative braking)"
+        
+        - condition: "road_class == RESIDENTIAL || road_class == LIVING_STREET"
+          multiply_by: 0.85
+          reason: "Stop-and-go traffic increases energy variability"
+        
+        - condition: "road_access == DESTINATION"
+          multiply_by: 0.1
+          reason: "Avoid destination-only roads"
+        
+        - condition: "road_class == MOTORWAY"
+          multiply_by: 1.15
+          reason: "Prefer efficient highway driving"
+        
+        - default: true
+          multiply_by: 1.0
+      
+      speed_limits:
+        - condition: "average_slope > 10"
+          limit_to: 55
+          reason: "Very steep uphill - reduce speed"
+        
+        - condition: "average_slope > 6"
+          limit_to: 70
+          reason: "Moderate uphill speed reduction"
+        
+        - condition: "road_class == MOTORWAY"
+          limit_to: 85
+          reason: "Slightly slower than diesel on highway"
+        
+        - condition: "road_class == PRIMARY"
+          limit_to: 75
+        
+        - default: true
+          limit_to: 50
+  
+  
+  hydrogen:
+    name: "truck_h2"
+    description: "Hydrogen fuel cell truck - fast refuel, range-constrained, policy-sensitive"
+    
+    # Physical/operational characteristics
+    physical:
+      fuel_type: "hydrogen"
+      range_km: 400
+      hydrogen_capacity_kg: 40
+      refuel_time_minutes: 12  # 700 bar + cooling + safety
+      hydrogen_consumption_kg_per_100km: 8
+      cargo_capacity_kg:
+        small: 8000    # Light cargo / urban delivery
+        medium: 15000  # Regional distribution  
+        large: 24000   # Long-haul heavy freight
+      refuel_pressure_bar: 700
+      
+    # Routing behavior - slight urban/tunnel penalties
+    routing:
+      distance_influence: 70
+      
+      priority:
+        - condition: "average_slope > 12"
+          multiply_by: 0.97
+          reason: "Very steep uphill - minimal penalty (fuel cell power adequate)"
+        
+        - condition: "road_class == MOTORWAY"
+          multiply_by: 1.2
+          reason: "Prefer highways"
+        
+        - condition: "road_class == PRIMARY || road_class == SECONDARY"
+          multiply_by: 1.1
+          reason: "Good main roads"
+        
+        - condition: "road_environment == TUNNEL"
+          multiply_by: 0.9
+          reason: "H2 safety concerns in tunnels (policy-dependent)"
+        
+        - condition: "road_class == RESIDENTIAL || road_class == LIVING_STREET"
+          multiply_by: 0.95
+          reason: "Slight urban penalty (potential LEZ restrictions)"
+        
+        - condition: "road_access == DESTINATION"
+          multiply_by: 0.1
+          reason: "Avoid destination-only roads"
+        
+        - default: true
+          multiply_by: 1.0
+      
+      speed_limits:
+        - condition: "road_class == MOTORWAY"
+          limit_to: 90
+        
+        - condition: "road_class == PRIMARY"
+          limit_to: 80
+        
+        - condition: "road_class == SECONDARY"
+          limit_to: 70
+        
+        - default: true
+          limit_to: 50
+
+
+# Notes on routing attributes used:
+# - road_class: MOTORWAY, PRIMARY, SECONDARY, RESIDENTIAL, etc.
+# - road_access: YES, DESTINATION, PRIVATE, etc.
+# - road_environment: ROAD, TUNNEL, BRIDGE, FERRY
+# - average_slope: Gradient % (positive = uphill, negative = downhill)
+#   * Only matters for EV trucks (battery drain on uphill)
+#   * Diesel & H2 have powerful engines - slopes don't affect routing
+# - max_slope: Maximum slope on a segment (used for speed limits)

@@ -48,6 +48,11 @@ srtm/
 Traffic_Integration/apikeys/
 apikeys/
 
+# Traffic Integration - Generated data (can be regenerated)
+Traffic_Integration/traffic_data/
+Traffic_Integration/maps/*.html
+!Traffic_Integration/maps/combined_features_map.html
+
 # System files
 .DS_Store
 Thumbs.db

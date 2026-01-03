@@ -1,0 +1,29 @@
+[
+  {
+    "file": "Dendermonde_to_Mechelen_20251229_174249.json",
+    "source": "Dendermonde",
+    "destination": "Mechelen",
+    "distance_km": 30.365243,
+    "time_min": 25.79435,
+    "num_points": 572,
+    "od_pair": "Dendermonde \u2192 Mechelen"
+  },
+  {
+    "file": "Waregem_to_Sint-Niklaas_20251229_175328.json",
+    "source": "Waregem",
+    "destination": "Sint-Niklaas",
+    "distance_km": 63.688984,
+    "time_min": 47.65335,
+    "num_points": 501,
+    "od_pair": "Waregem \u2192 Sint-Niklaas"
+  },
+  {
+    "file": "Genk_to_Aalst_20251229_170559.json",
+    "source": "Genk",
+    "destination": "Aalst",
+    "distance_km": 115.72304399999999,
+    "time_min": 83.38363333333334,
+    "num_points": 1665,
+    "od_pair": "Genk \u2192 Aalst"
+  }
+]

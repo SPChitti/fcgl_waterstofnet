@@ -44,6 +44,10 @@ graph-cache/
 *.osm.pbf
 srtm/
 
+# API Keys
+Traffic_Integration/apikeys/
+apikeys/
+
 # System files
 .DS_Store
 Thumbs.db

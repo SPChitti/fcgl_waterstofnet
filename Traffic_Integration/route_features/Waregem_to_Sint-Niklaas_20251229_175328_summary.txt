@@ -1,0 +1,45 @@
+================================================================================
+ROUTE FEATURES: Waregem → Sint-Niklaas
+================================================================================
+Distance: 63.7 km
+Time: 47.7 minutes
+Total Points: 501
+
+SPEED LIMITS:
+--------------------------------------------------------------------------------
+    120 km/h:  191 points ( 38.1%)
+     90 km/h:   18 points (  3.6%)
+     70 km/h:  101 points ( 20.2%)
+     50 km/h:   46 points (  9.2%)
+     30 km/h:  105 points ( 21.0%)
+
+ROAD CLASSES:
+--------------------------------------------------------------------------------
+  Motorway            :  216 points ( 43.1%)
+  Residential         :   85 points ( 17.0%)
+  Secondary Road      :   64 points ( 12.8%)
+  Tertiary Road       :   50 points ( 10.0%)
+  Primary Road        :   38 points (  7.6%)
+  Unclassified        :   36 points (  7.2%)
+  Service Road        :   11 points (  2.2%)
+
+SLOPE STATISTICS:
+--------------------------------------------------------------------------------
+  Average Slope: 0.23%
+  Max Uphill: 31.00%
+  Max Downhill: -31.00%
+
+ROAD ENVIRONMENT:
+--------------------------------------------------------------------------------
+  road           :  470 points ( 93.8%)
+  bridge         :   30 points (  6.0%)
+
+ROAD SURFACE:
+--------------------------------------------------------------------------------
+  asphalt        :  279 points ( 55.7%)
+  missing        :  171 points ( 34.1%)
+  concrete       :   46 points (  9.2%)
+  cobblestone    :    2 points (  0.4%)
+  paving_stones  :    2 points (  0.4%)
+
+================================================================================

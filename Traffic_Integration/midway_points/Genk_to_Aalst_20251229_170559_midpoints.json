@@ -1,0 +1,178 @@
+{
+  "source": "Genk",
+  "destination": "Aalst",
+  "total_distance_km": 115.65750785136817,
+  "total_points": 1665,
+  "start": {
+    "index": 0,
+    "coordinates": [
+      5.500039,
+      50.965999,
+      68.0
+    ],
+    "lat": 50.965999,
+    "lon": 5.500039,
+    "distance_from_start_km": 0.0,
+    "label": "START"
+  },
+  "midpoints": [
+    {
+      "index": 402,
+      "coordinates": [
+        5.246492,
+        50.947653,
+        30.0
+      ],
+      "lat": 50.947653,
+      "lon": 5.246492,
+      "distance_from_start_km": 19.27821389498959,
+      "label": "MIDPOINT_1"
+    },
+    {
+      "index": 666,
+      "coordinates": [
+        4.999203,
+        50.952891,
+        33.0
+      ],
+      "lat": 50.952891,
+      "lon": 4.999203,
+      "distance_from_start_km": 38.52502576587476,
+      "label": "MIDPOINT_2"
+    },
+    {
+      "index": 795,
+      "coordinates": [
+        4.743457,
+        50.931908,
+        15.0
+      ],
+      "lat": 50.931908,
+      "lon": 4.743457,
+      "distance_from_start_km": 57.700522231336734,
+      "label": "MIDPOINT_3"
+    },
+    {
+      "index": 1031,
+      "coordinates": [
+        4.508714,
+        50.878483,
+        55.0
+      ],
+      "lat": 50.878483,
+      "lon": 4.508714,
+      "distance_from_start_km": 77.11485617692244,
+      "label": "MIDPOINT_4"
+    },
+    {
+      "index": 1527,
+      "coordinates": [
+        4.259273,
+        50.879722,
+        60.0
+      ],
+      "lat": 50.879722,
+      "lon": 4.259273,
+      "distance_from_start_km": 96.39603028817716,
+      "label": "MIDPOINT_5"
+    }
+  ],
+  "end": {
+    "index": 1664,
+    "coordinates": [
+      4.035558,
+      50.93604,
+      12.0
+    ],
+    "lat": 50.93604,
+    "lon": 4.035558,
+    "distance_from_start_km": 115.65750785136817,
+    "label": "END"
+  },
+  "all_waypoints": [
+    {
+      "index": 0,
+      "coordinates": [
+        5.500039,
+        50.965999,
+        68.0
+      ],
+      "lat": 50.965999,
+      "lon": 5.500039,
+      "distance_from_start_km": 0.0,
+      "label": "START"
+    },
+    {
+      "index": 402,
+      "coordinates": [
+        5.246492,
+        50.947653,
+        30.0
+      ],
+      "lat": 50.947653,
+      "lon": 5.246492,
+      "distance_from_start_km": 19.27821389498959,
+      "label": "MIDPOINT_1"
+    },
+    {
+      "index": 666,
+      "coordinates": [
+        4.999203,
+        50.952891,
+        33.0
+      ],
+      "lat": 50.952891,
+      "lon": 4.999203,
+      "distance_from_start_km": 38.52502576587476,
+      "label": "MIDPOINT_2"
+    },
+    {
+      "index": 795,
+      "coordinates": [
+        4.743457,
+        50.931908,
+        15.0
+      ],
+      "lat": 50.931908,
+      "lon": 4.743457,
+      "distance_from_start_km": 57.700522231336734,
+      "label": "MIDPOINT_3"
+    },
+    {
+      "index": 1031,
+      "coordinates": [
+        4.508714,
+        50.878483,
+        55.0
+      ],
+      "lat": 50.878483,
+      "lon": 4.508714,
+      "distance_from_start_km": 77.11485617692244,
+      "label": "MIDPOINT_4"
+    },
+    {
+      "index": 1527,
+      "coordinates": [
+        4.259273,
+        50.879722,
+        60.0
+      ],
+      "lat": 50.879722,
+      "lon": 4.259273,
+      "distance_from_start_km": 96.39603028817716,
+      "label": "MIDPOINT_5"
+    },
+    {
+      "index": 1664,
+      "coordinates": [
+        4.035558,
+        50.93604,
+        12.0
+      ],
+      "lat": 50.93604,
+      "lon": 4.035558,
+      "distance_from_start_km": 115.65750785136817,
+      "label": "END"
+    }
+  ]
+}

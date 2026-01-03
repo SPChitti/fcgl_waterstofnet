@@ -1,0 +1,3107 @@
+{
+  "route_info": {
+    "source": "Waregem",
+    "destination": "Sint-Niklaas",
+    "total_distance_km": 63.688984,
+    "total_time_min": 47.65335,
+    "total_points": 501
+  },
+  "max_speed": [
+    {
+      "start_index": 0,
+      "end_index": 1,
+      "value": null,
+      "num_points": 1
+    },
+    {
+      "start_index": 1,
+      "end_index": 47,
+      "value": 30.0,
+      "num_points": 46
+    },
+    {
+      "start_index": 47,
+      "end_index": 78,
+      "value": 50.0,
+      "num_points": 31
+    },
+    {
+      "start_index": 78,
+      "end_index": 80,
+      "value": 30.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 80,
+      "end_index": 86,
+      "value": 50.0,
+      "num_points": 6
+    },
+    {
+      "start_index": 86,
+      "end_index": 87,
+      "value": null,
+      "num_points": 1
+    },
+    {
+      "start_index": 87,
+      "end_index": 92,
+      "value": 50.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 92,
+      "end_index": 139,
+      "value": 70.0,
+      "num_points": 47
+    },
+    {
+      "start_index": 139,
+      "end_index": 142,
+      "value": null,
+      "num_points": 3
+    },
+    {
+      "start_index": 142,
+      "end_index": 146,
+      "value": 70.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 146,
+      "end_index": 149,
+      "value": null,
+      "num_points": 3
+    },
+    {
+      "start_index": 149,
+      "end_index": 260,
+      "value": 120.0,
+      "num_points": 111
+    },
+    {
+      "start_index": 260,
+      "end_index": 278,
+      "value": 90.0,
+      "num_points": 18
+    },
+    {
+      "start_index": 278,
+      "end_index": 358,
+      "value": 120.0,
+      "num_points": 80
+    },
+    {
+      "start_index": 358,
+      "end_index": 363,
+      "value": null,
+      "num_points": 5
+    },
+    {
+      "start_index": 363,
+      "end_index": 380,
+      "value": 70.0,
+      "num_points": 17
+    },
+    {
+      "start_index": 380,
+      "end_index": 395,
+      "value": null,
+      "num_points": 15
+    },
+    {
+      "start_index": 395,
+      "end_index": 415,
+      "value": 70.0,
+      "num_points": 20
+    },
+    {
+      "start_index": 415,
+      "end_index": 416,
+      "value": null,
+      "num_points": 1
+    },
+    {
+      "start_index": 416,
+      "end_index": 429,
+      "value": 70.0,
+      "num_points": 13
+    },
+    {
+      "start_index": 429,
+      "end_index": 433,
+      "value": 50.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 433,
+      "end_index": 454,
+      "value": 30.0,
+      "num_points": 21
+    },
+    {
+      "start_index": 454,
+      "end_index": 464,
+      "value": null,
+      "num_points": 10
+    },
+    {
+      "start_index": 464,
+      "end_index": 500,
+      "value": 30.0,
+      "num_points": 36
+    }
+  ],
+  "average_slope": [
+    {
+      "start_index": 0,
+      "end_index": 2,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 2,
+      "end_index": 3,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 3,
+      "end_index": 6,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 6,
+      "end_index": 7,
+      "value": 5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 7,
+      "end_index": 9,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 9,
+      "end_index": 14,
+      "value": 0.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 14,
+      "end_index": 15,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 15,
+      "end_index": 18,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 18,
+      "end_index": 21,
+      "value": 4.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 21,
+      "end_index": 22,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 22,
+      "end_index": 27,
+      "value": -3.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 27,
+      "end_index": 30,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 30,
+      "end_index": 37,
+      "value": -3.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 37,
+      "end_index": 45,
+      "value": -1.0,
+      "num_points": 8
+    },
+    {
+      "start_index": 45,
+      "end_index": 46,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 46,
+      "end_index": 47,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 47,
+      "end_index": 49,
+      "value": -3.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 49,
+      "end_index": 51,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 51,
+      "end_index": 53,
+      "value": -4.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 53,
+      "end_index": 56,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 56,
+      "end_index": 57,
+      "value": 3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 57,
+      "end_index": 64,
+      "value": -2.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 64,
+      "end_index": 65,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 65,
+      "end_index": 66,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 66,
+      "end_index": 67,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 67,
+      "end_index": 76,
+      "value": 0.0,
+      "num_points": 9
+    },
+    {
+      "start_index": 76,
+      "end_index": 78,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 78,
+      "end_index": 79,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 79,
+      "end_index": 80,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 80,
+      "end_index": 81,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 81,
+      "end_index": 87,
+      "value": 0.0,
+      "num_points": 6
+    },
+    {
+      "start_index": 87,
+      "end_index": 89,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 89,
+      "end_index": 90,
+      "value": -3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 90,
+      "end_index": 92,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 92,
+      "end_index": 104,
+      "value": 0.0,
+      "num_points": 12
+    },
+    {
+      "start_index": 104,
+      "end_index": 108,
+      "value": 2.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 108,
+      "end_index": 111,
+      "value": -1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 111,
+      "end_index": 115,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 115,
+      "end_index": 117,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 117,
+      "end_index": 120,
+      "value": 1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 120,
+      "end_index": 121,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 121,
+      "end_index": 125,
+      "value": -2.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 125,
+      "end_index": 129,
+      "value": -1.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 129,
+      "end_index": 133,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 133,
+      "end_index": 136,
+      "value": 1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 136,
+      "end_index": 139,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 139,
+      "end_index": 142,
+      "value": 2.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 142,
+      "end_index": 143,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 143,
+      "end_index": 144,
+      "value": 5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 144,
+      "end_index": 147,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 147,
+      "end_index": 149,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 149,
+      "end_index": 158,
+      "value": -2.0,
+      "num_points": 9
+    },
+    {
+      "start_index": 158,
+      "end_index": 171,
+      "value": 0.0,
+      "num_points": 13
+    },
+    {
+      "start_index": 171,
+      "end_index": 172,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 172,
+      "end_index": 173,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 173,
+      "end_index": 175,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 175,
+      "end_index": 184,
+      "value": 0.0,
+      "num_points": 9
+    },
+    {
+      "start_index": 184,
+      "end_index": 185,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 185,
+      "end_index": 187,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 187,
+      "end_index": 191,
+      "value": -1.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 191,
+      "end_index": 192,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 192,
+      "end_index": 196,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 196,
+      "end_index": 197,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 197,
+      "end_index": 199,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 199,
+      "end_index": 200,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 200,
+      "end_index": 201,
+      "value": 6.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 201,
+      "end_index": 228,
+      "value": 0.0,
+      "num_points": 27
+    },
+    {
+      "start_index": 228,
+      "end_index": 229,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 229,
+      "end_index": 230,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 230,
+      "end_index": 231,
+      "value": -4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 231,
+      "end_index": 232,
+      "value": 11.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 232,
+      "end_index": 235,
+      "value": -1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 235,
+      "end_index": 236,
+      "value": -6.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 236,
+      "end_index": 237,
+      "value": 8.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 237,
+      "end_index": 239,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 239,
+      "end_index": 241,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 241,
+      "end_index": 242,
+      "value": -11.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 242,
+      "end_index": 243,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 243,
+      "end_index": 244,
+      "value": 4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 244,
+      "end_index": 255,
+      "value": 0.0,
+      "num_points": 11
+    },
+    {
+      "start_index": 255,
+      "end_index": 256,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 256,
+      "end_index": 257,
+      "value": -5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 257,
+      "end_index": 258,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 258,
+      "end_index": 259,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 259,
+      "end_index": 260,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 260,
+      "end_index": 261,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 261,
+      "end_index": 262,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 262,
+      "end_index": 270,
+      "value": 0.0,
+      "num_points": 8
+    },
+    {
+      "start_index": 270,
+      "end_index": 271,
+      "value": -3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 271,
+      "end_index": 272,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 272,
+      "end_index": 273,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 273,
+      "end_index": 274,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 274,
+      "end_index": 275,
+      "value": 7.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 275,
+      "end_index": 276,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 276,
+      "end_index": 277,
+      "value": 3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 277,
+      "end_index": 278,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 278,
+      "end_index": 279,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 279,
+      "end_index": 281,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 281,
+      "end_index": 283,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 283,
+      "end_index": 309,
+      "value": 0.0,
+      "num_points": 26
+    },
+    {
+      "start_index": 309,
+      "end_index": 310,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 310,
+      "end_index": 329,
+      "value": 0.0,
+      "num_points": 19
+    },
+    {
+      "start_index": 329,
+      "end_index": 330,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 330,
+      "end_index": 331,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 331,
+      "end_index": 332,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 332,
+      "end_index": 333,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 333,
+      "end_index": 334,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 334,
+      "end_index": 335,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 335,
+      "end_index": 336,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 336,
+      "end_index": 337,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 337,
+      "end_index": 349,
+      "value": 0.0,
+      "num_points": 12
+    },
+    {
+      "start_index": 349,
+      "end_index": 350,
+      "value": 6.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 350,
+      "end_index": 355,
+      "value": 1.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 355,
+      "end_index": 362,
+      "value": 0.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 362,
+      "end_index": 363,
+      "value": 18.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 363,
+      "end_index": 364,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 364,
+      "end_index": 365,
+      "value": 10.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 365,
+      "end_index": 366,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 366,
+      "end_index": 370,
+      "value": -7.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 370,
+      "end_index": 373,
+      "value": -2.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 373,
+      "end_index": 376,
+      "value": -1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 376,
+      "end_index": 377,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 377,
+      "end_index": 380,
+      "value": -1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 380,
+      "end_index": 383,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 383,
+      "end_index": 388,
+      "value": -1.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 388,
+      "end_index": 389,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 389,
+      "end_index": 391,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 391,
+      "end_index": 392,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 392,
+      "end_index": 395,
+      "value": 1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 395,
+      "end_index": 396,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 396,
+      "end_index": 397,
+      "value": -3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 397,
+      "end_index": 399,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 399,
+      "end_index": 401,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 401,
+      "end_index": 402,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 402,
+      "end_index": 403,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 403,
+      "end_index": 405,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 405,
+      "end_index": 406,
+      "value": 4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 406,
+      "end_index": 407,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 407,
+      "end_index": 408,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 408,
+      "end_index": 410,
+      "value": -2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 410,
+      "end_index": 411,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 411,
+      "end_index": 412,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 412,
+      "end_index": 413,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 413,
+      "end_index": 415,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 415,
+      "end_index": 417,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 417,
+      "end_index": 418,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 418,
+      "end_index": 419,
+      "value": 5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 419,
+      "end_index": 420,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 420,
+      "end_index": 422,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 422,
+      "end_index": 425,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 425,
+      "end_index": 426,
+      "value": -3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 426,
+      "end_index": 427,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 427,
+      "end_index": 428,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 428,
+      "end_index": 429,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 429,
+      "end_index": 430,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 430,
+      "end_index": 432,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 432,
+      "end_index": 433,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 433,
+      "end_index": 435,
+      "value": -3.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 435,
+      "end_index": 436,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 436,
+      "end_index": 437,
+      "value": -5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 437,
+      "end_index": 438,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 438,
+      "end_index": 439,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 439,
+      "end_index": 443,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 443,
+      "end_index": 444,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 444,
+      "end_index": 445,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 445,
+      "end_index": 446,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 446,
+      "end_index": 447,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 447,
+      "end_index": 451,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 451,
+      "end_index": 454,
+      "value": -3.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 454,
+      "end_index": 464,
+      "value": 1.0,
+      "num_points": 10
+    },
+    {
+      "start_index": 464,
+      "end_index": 465,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 465,
+      "end_index": 466,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 466,
+      "end_index": 468,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 468,
+      "end_index": 469,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 469,
+      "end_index": 470,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 470,
+      "end_index": 471,
+      "value": -4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 471,
+      "end_index": 472,
+      "value": 13.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 472,
+      "end_index": 475,
+      "value": -1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 475,
+      "end_index": 476,
+      "value": 3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 476,
+      "end_index": 480,
+      "value": 2.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 480,
+      "end_index": 487,
+      "value": 0.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 487,
+      "end_index": 489,
+      "value": 3.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 489,
+      "end_index": 491,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 491,
+      "end_index": 492,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 492,
+      "end_index": 493,
+      "value": -4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 493,
+      "end_index": 500,
+      "value": 0.0,
+      "num_points": 7
+    }
+  ],
+  "max_slope": [
+    {
+      "start_index": 0,
+      "end_index": 2,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 2,
+      "end_index": 3,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 3,
+      "end_index": 6,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 6,
+      "end_index": 7,
+      "value": 5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 7,
+      "end_index": 9,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 9,
+      "end_index": 11,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 11,
+      "end_index": 12,
+      "value": -31.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 12,
+      "end_index": 14,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 14,
+      "end_index": 15,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 15,
+      "end_index": 18,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 18,
+      "end_index": 21,
+      "value": 4.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 21,
+      "end_index": 22,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 22,
+      "end_index": 27,
+      "value": -5.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 27,
+      "end_index": 30,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 30,
+      "end_index": 37,
+      "value": -13.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 37,
+      "end_index": 42,
+      "value": -2.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 42,
+      "end_index": 45,
+      "value": -1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 45,
+      "end_index": 46,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 46,
+      "end_index": 47,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 47,
+      "end_index": 49,
+      "value": -3.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 49,
+      "end_index": 51,
+      "value": -31.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 51,
+      "end_index": 53,
+      "value": -4.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 53,
+      "end_index": 56,
+      "value": -2.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 56,
+      "end_index": 57,
+      "value": 3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 57,
+      "end_index": 64,
+      "value": -3.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 64,
+      "end_index": 65,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 65,
+      "end_index": 66,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 66,
+      "end_index": 67,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 67,
+      "end_index": 68,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 68,
+      "end_index": 72,
+      "value": 5.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 72,
+      "end_index": 76,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 76,
+      "end_index": 78,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 78,
+      "end_index": 79,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 79,
+      "end_index": 80,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 80,
+      "end_index": 81,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 81,
+      "end_index": 83,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 83,
+      "end_index": 86,
+      "value": 3.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 86,
+      "end_index": 87,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 87,
+      "end_index": 89,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 89,
+      "end_index": 90,
+      "value": -3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 90,
+      "end_index": 92,
+      "value": 3.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 92,
+      "end_index": 100,
+      "value": -2.0,
+      "num_points": 8
+    },
+    {
+      "start_index": 100,
+      "end_index": 104,
+      "value": -1.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 104,
+      "end_index": 108,
+      "value": 4.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 108,
+      "end_index": 114,
+      "value": -1.0,
+      "num_points": 6
+    },
+    {
+      "start_index": 114,
+      "end_index": 115,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 115,
+      "end_index": 117,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 117,
+      "end_index": 120,
+      "value": 1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 120,
+      "end_index": 121,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 121,
+      "end_index": 125,
+      "value": -6.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 125,
+      "end_index": 129,
+      "value": -2.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 129,
+      "end_index": 133,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 133,
+      "end_index": 136,
+      "value": 1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 136,
+      "end_index": 139,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 139,
+      "end_index": 142,
+      "value": 5.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 142,
+      "end_index": 143,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 143,
+      "end_index": 144,
+      "value": 5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 144,
+      "end_index": 146,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 146,
+      "end_index": 147,
+      "value": 31.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 147,
+      "end_index": 149,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 149,
+      "end_index": 158,
+      "value": -6.0,
+      "num_points": 9
+    },
+    {
+      "start_index": 158,
+      "end_index": 162,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 162,
+      "end_index": 171,
+      "value": 1.0,
+      "num_points": 9
+    },
+    {
+      "start_index": 171,
+      "end_index": 172,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 172,
+      "end_index": 173,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 173,
+      "end_index": 175,
+      "value": -2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 175,
+      "end_index": 176,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 176,
+      "end_index": 183,
+      "value": 1.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 183,
+      "end_index": 184,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 184,
+      "end_index": 185,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 185,
+      "end_index": 187,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 187,
+      "end_index": 191,
+      "value": -3.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 191,
+      "end_index": 192,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 192,
+      "end_index": 196,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 196,
+      "end_index": 197,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 197,
+      "end_index": 199,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 199,
+      "end_index": 200,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 200,
+      "end_index": 201,
+      "value": 6.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 201,
+      "end_index": 227,
+      "value": 3.0,
+      "num_points": 26
+    },
+    {
+      "start_index": 227,
+      "end_index": 228,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 228,
+      "end_index": 229,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 229,
+      "end_index": 230,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 230,
+      "end_index": 231,
+      "value": -4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 231,
+      "end_index": 232,
+      "value": 11.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 232,
+      "end_index": 235,
+      "value": -2.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 235,
+      "end_index": 236,
+      "value": -6.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 236,
+      "end_index": 237,
+      "value": 8.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 237,
+      "end_index": 239,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 239,
+      "end_index": 241,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 241,
+      "end_index": 242,
+      "value": -11.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 242,
+      "end_index": 243,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 243,
+      "end_index": 255,
+      "value": 4.0,
+      "num_points": 12
+    },
+    {
+      "start_index": 255,
+      "end_index": 256,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 256,
+      "end_index": 257,
+      "value": -5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 257,
+      "end_index": 258,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 258,
+      "end_index": 259,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 259,
+      "end_index": 260,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 260,
+      "end_index": 261,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 261,
+      "end_index": 262,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 262,
+      "end_index": 270,
+      "value": 6.0,
+      "num_points": 8
+    },
+    {
+      "start_index": 270,
+      "end_index": 271,
+      "value": -3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 271,
+      "end_index": 272,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 272,
+      "end_index": 273,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 273,
+      "end_index": 274,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 274,
+      "end_index": 275,
+      "value": 7.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 275,
+      "end_index": 276,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 276,
+      "end_index": 277,
+      "value": 3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 277,
+      "end_index": 278,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 278,
+      "end_index": 279,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 279,
+      "end_index": 281,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 281,
+      "end_index": 283,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 283,
+      "end_index": 288,
+      "value": 0.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 288,
+      "end_index": 295,
+      "value": 1.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 295,
+      "end_index": 298,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 298,
+      "end_index": 308,
+      "value": 1.0,
+      "num_points": 10
+    },
+    {
+      "start_index": 308,
+      "end_index": 309,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 309,
+      "end_index": 310,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 310,
+      "end_index": 328,
+      "value": -1.0,
+      "num_points": 18
+    },
+    {
+      "start_index": 328,
+      "end_index": 329,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 329,
+      "end_index": 330,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 330,
+      "end_index": 331,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 331,
+      "end_index": 332,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 332,
+      "end_index": 333,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 333,
+      "end_index": 334,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 334,
+      "end_index": 335,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 335,
+      "end_index": 336,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 336,
+      "end_index": 337,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 337,
+      "end_index": 349,
+      "value": 2.0,
+      "num_points": 12
+    },
+    {
+      "start_index": 349,
+      "end_index": 350,
+      "value": 6.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 350,
+      "end_index": 355,
+      "value": 1.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 355,
+      "end_index": 358,
+      "value": -1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 358,
+      "end_index": 359,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 359,
+      "end_index": 362,
+      "value": 4.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 362,
+      "end_index": 363,
+      "value": 18.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 363,
+      "end_index": 364,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 364,
+      "end_index": 365,
+      "value": 10.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 365,
+      "end_index": 366,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 366,
+      "end_index": 370,
+      "value": -9.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 370,
+      "end_index": 373,
+      "value": -2.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 373,
+      "end_index": 376,
+      "value": -1.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 376,
+      "end_index": 377,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 377,
+      "end_index": 380,
+      "value": -7.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 380,
+      "end_index": 383,
+      "value": 0.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 383,
+      "end_index": 388,
+      "value": -1.0,
+      "num_points": 5
+    },
+    {
+      "start_index": 388,
+      "end_index": 389,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 389,
+      "end_index": 391,
+      "value": 1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 391,
+      "end_index": 392,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 392,
+      "end_index": 395,
+      "value": -6.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 395,
+      "end_index": 396,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 396,
+      "end_index": 397,
+      "value": -3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 397,
+      "end_index": 399,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 399,
+      "end_index": 401,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 401,
+      "end_index": 402,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 402,
+      "end_index": 403,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 403,
+      "end_index": 405,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 405,
+      "end_index": 406,
+      "value": 4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 406,
+      "end_index": 407,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 407,
+      "end_index": 408,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 408,
+      "end_index": 410,
+      "value": -2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 410,
+      "end_index": 411,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 411,
+      "end_index": 412,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 412,
+      "end_index": 413,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 413,
+      "end_index": 415,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 415,
+      "end_index": 417,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 417,
+      "end_index": 418,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 418,
+      "end_index": 419,
+      "value": 5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 419,
+      "end_index": 420,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 420,
+      "end_index": 422,
+      "value": -1.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 422,
+      "end_index": 423,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 423,
+      "end_index": 424,
+      "value": 31.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 424,
+      "end_index": 425,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 425,
+      "end_index": 426,
+      "value": -3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 426,
+      "end_index": 427,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 427,
+      "end_index": 428,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 428,
+      "end_index": 429,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 429,
+      "end_index": 430,
+      "value": -2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 430,
+      "end_index": 432,
+      "value": 0.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 432,
+      "end_index": 433,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 433,
+      "end_index": 435,
+      "value": -5.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 435,
+      "end_index": 436,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 436,
+      "end_index": 437,
+      "value": -5.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 437,
+      "end_index": 438,
+      "value": 1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 438,
+      "end_index": 439,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 439,
+      "end_index": 443,
+      "value": 0.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 443,
+      "end_index": 444,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 444,
+      "end_index": 445,
+      "value": 2.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 445,
+      "end_index": 446,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 446,
+      "end_index": 447,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 447,
+      "end_index": 448,
+      "value": 31.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 448,
+      "end_index": 449,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 449,
+      "end_index": 451,
+      "value": 31.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 451,
+      "end_index": 454,
+      "value": -3.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 454,
+      "end_index": 464,
+      "value": 5.0,
+      "num_points": 10
+    },
+    {
+      "start_index": 464,
+      "end_index": 465,
+      "value": 31.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 465,
+      "end_index": 466,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 466,
+      "end_index": 468,
+      "value": 3.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 468,
+      "end_index": 469,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 469,
+      "end_index": 470,
+      "value": -1.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 470,
+      "end_index": 471,
+      "value": -4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 471,
+      "end_index": 472,
+      "value": 13.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 472,
+      "end_index": 475,
+      "value": -4.0,
+      "num_points": 3
+    },
+    {
+      "start_index": 475,
+      "end_index": 476,
+      "value": 3.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 476,
+      "end_index": 480,
+      "value": 2.0,
+      "num_points": 4
+    },
+    {
+      "start_index": 480,
+      "end_index": 487,
+      "value": 0.0,
+      "num_points": 7
+    },
+    {
+      "start_index": 487,
+      "end_index": 489,
+      "value": 4.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 489,
+      "end_index": 491,
+      "value": 2.0,
+      "num_points": 2
+    },
+    {
+      "start_index": 491,
+      "end_index": 492,
+      "value": 0.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 492,
+      "end_index": 493,
+      "value": -4.0,
+      "num_points": 1
+    },
+    {
+      "start_index": 493,
+      "end_index": 499,
+      "value": 10.0,
+      "num_points": 6
+    },
+    {
+      "start_index": 499,
+      "end_index": 500,
+      "value": 0.0,
+      "num_points": 1
+    }
+  ],
+  "surface": [
+    {
+      "start_index": 0,
+      "end_index": 11,
+      "value": "missing",
+      "num_points": 11
+    },
+    {
+      "start_index": 11,
+      "end_index": 12,
+      "value": "asphalt",
+      "num_points": 1
+    },
+    {
+      "start_index": 12,
+      "end_index": 21,
+      "value": "missing",
+      "num_points": 9
+    },
+    {
+      "start_index": 21,
+      "end_index": 27,
+      "value": "asphalt",
+      "num_points": 6
+    },
+    {
+      "start_index": 27,
+      "end_index": 30,
+      "value": "missing",
+      "num_points": 3
+    },
+    {
+      "start_index": 30,
+      "end_index": 37,
+      "value": "asphalt",
+      "num_points": 7
+    },
+    {
+      "start_index": 37,
+      "end_index": 53,
+      "value": "missing",
+      "num_points": 16
+    },
+    {
+      "start_index": 53,
+      "end_index": 72,
+      "value": "asphalt",
+      "num_points": 19
+    },
+    {
+      "start_index": 72,
+      "end_index": 86,
+      "value": "missing",
+      "num_points": 14
+    },
+    {
+      "start_index": 86,
+      "end_index": 108,
+      "value": "asphalt",
+      "num_points": 22
+    },
+    {
+      "start_index": 108,
+      "end_index": 115,
+      "value": "concrete",
+      "num_points": 7
+    },
+    {
+      "start_index": 115,
+      "end_index": 139,
+      "value": "missing",
+      "num_points": 24
+    },
+    {
+      "start_index": 139,
+      "end_index": 143,
+      "value": "asphalt",
+      "num_points": 4
+    },
+    {
+      "start_index": 143,
+      "end_index": 146,
+      "value": "missing",
+      "num_points": 3
+    },
+    {
+      "start_index": 146,
+      "end_index": 172,
+      "value": "asphalt",
+      "num_points": 26
+    },
+    {
+      "start_index": 172,
+      "end_index": 198,
+      "value": "missing",
+      "num_points": 26
+    },
+    {
+      "start_index": 198,
+      "end_index": 200,
+      "value": "concrete",
+      "num_points": 2
+    },
+    {
+      "start_index": 200,
+      "end_index": 201,
+      "value": "asphalt",
+      "num_points": 1
+    },
+    {
+      "start_index": 201,
+      "end_index": 227,
+      "value": "concrete",
+      "num_points": 26
+    },
+    {
+      "start_index": 227,
+      "end_index": 241,
+      "value": "asphalt",
+      "num_points": 14
+    },
+    {
+      "start_index": 241,
+      "end_index": 244,
+      "value": "missing",
+      "num_points": 3
+    },
+    {
+      "start_index": 244,
+      "end_index": 255,
+      "value": "asphalt",
+      "num_points": 11
+    },
+    {
+      "start_index": 255,
+      "end_index": 260,
+      "value": "missing",
+      "num_points": 5
+    },
+    {
+      "start_index": 260,
+      "end_index": 358,
+      "value": "asphalt",
+      "num_points": 98
+    },
+    {
+      "start_index": 358,
+      "end_index": 359,
+      "value": "missing",
+      "num_points": 1
+    },
+    {
+      "start_index": 359,
+      "end_index": 362,
+      "value": "asphalt",
+      "num_points": 3
+    },
+    {
+      "start_index": 362,
+      "end_index": 363,
+      "value": "missing",
+      "num_points": 1
+    },
+    {
+      "start_index": 363,
+      "end_index": 380,
+      "value": "asphalt",
+      "num_points": 17
+    },
+    {
+      "start_index": 380,
+      "end_index": 392,
+      "value": "missing",
+      "num_points": 12
+    },
+    {
+      "start_index": 392,
+      "end_index": 407,
+      "value": "asphalt",
+      "num_points": 15
+    },
+    {
+      "start_index": 407,
+      "end_index": 425,
+      "value": "missing",
+      "num_points": 18
+    },
+    {
+      "start_index": 425,
+      "end_index": 433,
+      "value": "asphalt",
+      "num_points": 8
+    },
+    {
+      "start_index": 433,
+      "end_index": 444,
+      "value": "concrete",
+      "num_points": 11
+    },
+    {
+      "start_index": 444,
+      "end_index": 446,
+      "value": "asphalt",
+      "num_points": 2
+    },
+    {
+      "start_index": 446,
+      "end_index": 464,
+      "value": "missing",
+      "num_points": 18
+    },
+    {
+      "start_index": 464,
+      "end_index": 466,
+      "value": "asphalt",
+      "num_points": 2
+    },
+    {
+      "start_index": 466,
+      "end_index": 471,
+      "value": "missing",
+      "num_points": 5
+    },
+    {
+      "start_index": 471,
+      "end_index": 487,
+      "value": "asphalt",
+      "num_points": 16
+    },
+    {
+      "start_index": 487,
+      "end_index": 489,
+      "value": "missing",
+      "num_points": 2
+    },
+    {
+      "start_index": 489,
+      "end_index": 491,
+      "value": "cobblestone",
+      "num_points": 2
+    },
+    {
+      "start_index": 491,
+      "end_index": 493,
+      "value": "paving_stones",
+      "num_points": 2
+    },
+    {
+      "start_index": 493,
+      "end_index": 500,
+      "value": "asphalt",
+      "num_points": 7
+    }
+  ],
+  "road_class": [
+    {
+      "start_index": 0,
+      "end_index": 1,
+      "value": "service",
+      "num_points": 1
+    },
+    {
+      "start_index": 1,
+      "end_index": 14,
+      "value": "residential",
+      "num_points": 13
+    },
+    {
+      "start_index": 14,
+      "end_index": 30,
+      "value": "tertiary",
+      "num_points": 16
+    },
+    {
+      "start_index": 30,
+      "end_index": 72,
+      "value": "secondary",
+      "num_points": 42
+    },
+    {
+      "start_index": 72,
+      "end_index": 108,
+      "value": "unclassified",
+      "num_points": 36
+    },
+    {
+      "start_index": 108,
+      "end_index": 142,
+      "value": "tertiary",
+      "num_points": 34
+    },
+    {
+      "start_index": 142,
+      "end_index": 147,
+      "value": "secondary",
+      "num_points": 5
+    },
+    {
+      "start_index": 147,
+      "end_index": 363,
+      "value": "motorway",
+      "num_points": 216
+    },
+    {
+      "start_index": 363,
+      "end_index": 380,
+      "value": "secondary",
+      "num_points": 17
+    },
+    {
+      "start_index": 380,
+      "end_index": 395,
+      "value": "residential",
+      "num_points": 15
+    },
+    {
+      "start_index": 395,
+      "end_index": 433,
+      "value": "primary",
+      "num_points": 38
+    },
+    {
+      "start_index": 433,
+      "end_index": 454,
+      "value": "residential",
+      "num_points": 21
+    },
+    {
+      "start_index": 454,
+      "end_index": 464,
+      "value": "service",
+      "num_points": 10
+    },
+    {
+      "start_index": 464,
+      "end_index": 500,
+      "value": "residential",
+      "num_points": 36
+    }
+  ],
+  "road_environment": [
+    {
+      "start_index": 0,
+      "end_index": 191,
+      "value": "road",
+      "num_points": 191
+    },
+    {
+      "start_index": 191,
+      "end_index": 192,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 192,
+      "end_index": 200,
+      "value": "road",
+      "num_points": 8
+    },
+    {
+      "start_index": 200,
+      "end_index": 201,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 201,
+      "end_index": 227,
+      "value": "road",
+      "num_points": 26
+    },
+    {
+      "start_index": 227,
+      "end_index": 228,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 228,
+      "end_index": 229,
+      "value": "road",
+      "num_points": 1
+    },
+    {
+      "start_index": 229,
+      "end_index": 230,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 230,
+      "end_index": 231,
+      "value": "road",
+      "num_points": 1
+    },
+    {
+      "start_index": 231,
+      "end_index": 232,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 232,
+      "end_index": 235,
+      "value": "road",
+      "num_points": 3
+    },
+    {
+      "start_index": 235,
+      "end_index": 236,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 236,
+      "end_index": 240,
+      "value": "road",
+      "num_points": 4
+    },
+    {
+      "start_index": 240,
+      "end_index": 244,
+      "value": "bridge",
+      "num_points": 4
+    },
+    {
+      "start_index": 244,
+      "end_index": 255,
+      "value": "road",
+      "num_points": 11
+    },
+    {
+      "start_index": 255,
+      "end_index": 259,
+      "value": "bridge",
+      "num_points": 4
+    },
+    {
+      "start_index": 259,
+      "end_index": 261,
+      "value": "road",
+      "num_points": 2
+    },
+    {
+      "start_index": 261,
+      "end_index": 270,
+      "value": "bridge",
+      "num_points": 9
+    },
+    {
+      "start_index": 270,
+      "end_index": 276,
+      "value": "road",
+      "num_points": 6
+    },
+    {
+      "start_index": 276,
+      "end_index": 277,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 277,
+      "end_index": 278,
+      "value": "road",
+      "num_points": 1
+    },
+    {
+      "start_index": 278,
+      "end_index": 279,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 279,
+      "end_index": 328,
+      "value": "road",
+      "num_points": 49
+    },
+    {
+      "start_index": 328,
+      "end_index": 329,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 329,
+      "end_index": 331,
+      "value": "road",
+      "num_points": 2
+    },
+    {
+      "start_index": 331,
+      "end_index": 332,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 332,
+      "end_index": 336,
+      "value": "road",
+      "num_points": 4
+    },
+    {
+      "start_index": 336,
+      "end_index": 337,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 337,
+      "end_index": 349,
+      "value": "road",
+      "num_points": 12
+    },
+    {
+      "start_index": 349,
+      "end_index": 350,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 350,
+      "end_index": 405,
+      "value": "road",
+      "num_points": 55
+    },
+    {
+      "start_index": 405,
+      "end_index": 406,
+      "value": "bridge",
+      "num_points": 1
+    },
+    {
+      "start_index": 406,
+      "end_index": 500,
+      "value": "road",
+      "num_points": 94
+    }
+  ],
+  "road_access": [
+    {
+      "start_index": 0,
+      "end_index": 12,
+      "value": "yes",
+      "num_points": 12
+    },
+    {
+      "start_index": 12,
+      "end_index": 14,
+      "value": "no",
+      "num_points": 2
+    },
+    {
+      "start_index": 14,
+      "end_index": 447,
+      "value": "yes",
+      "num_points": 433
+    },
+    {
+      "start_index": 447,
+      "end_index": 450,
+      "value": "no",
+      "num_points": 3
+    },
+    {
+      "start_index": 450,
+      "end_index": 500,
+      "value": "yes",
+      "num_points": 50
+    }
+  ]
+}

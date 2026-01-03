@@ -1,0 +1,25 @@
+{
+  "collection_date": "2026-01-03T15:25:50.569975",
+  "total_calls": 882,
+  "successful_calls": 882,
+  "failed_calls": 0,
+  "waypoints_count": 21,
+  "hours_sampled": [
+    6,
+    9,
+    12,
+    15,
+    18,
+    21
+  ],
+  "days_sampled": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "files_created": 882
+}

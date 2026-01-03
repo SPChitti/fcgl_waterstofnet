@@ -1,0 +1,178 @@
+{
+  "source": "Waregem",
+  "destination": "Sint-Niklaas",
+  "total_distance_km": 63.67823154545468,
+  "total_points": 501,
+  "start": {
+    "index": 0,
+    "coordinates": [
+      3.427127,
+      50.88832,
+      14.0
+    ],
+    "lat": 50.88832,
+    "lon": 3.427127,
+    "distance_from_start_km": 0.0,
+    "label": "START"
+  },
+  "midpoints": [
+    {
+      "index": 168,
+      "coordinates": [
+        3.538619,
+        50.942157,
+        13.0
+      ],
+      "lat": 50.942157,
+      "lon": 3.538619,
+      "distance_from_start_km": 10.844393363875506,
+      "label": "MIDPOINT_1"
+    },
+    {
+      "index": 197,
+      "coordinates": [
+        3.665533,
+        50.982317,
+        12.0
+      ],
+      "lat": 50.982317,
+      "lon": 3.665533,
+      "distance_from_start_km": 20.944139885965384,
+      "label": "MIDPOINT_2"
+    },
+    {
+      "index": 272,
+      "coordinates": [
+        3.778468,
+        51.040957,
+        5.0
+      ],
+      "lat": 51.040957,
+      "lon": 3.778468,
+      "distance_from_start_km": 31.88321662776941,
+      "label": "MIDPOINT_3"
+    },
+    {
+      "index": 309,
+      "coordinates": [
+        3.928501,
+        51.071451,
+        3.0
+      ],
+      "lat": 51.071451,
+      "lon": 3.928501,
+      "distance_from_start_km": 42.9808322723317,
+      "label": "MIDPOINT_4"
+    },
+    {
+      "index": 346,
+      "coordinates": [
+        4.053764,
+        51.107845,
+        9.0
+      ],
+      "lat": 51.107845,
+      "lon": 4.053764,
+      "distance_from_start_km": 53.1090798639949,
+      "label": "MIDPOINT_5"
+    }
+  ],
+  "end": {
+    "index": 500,
+    "coordinates": [
+      4.143546,
+      51.16492,
+      21.0
+    ],
+    "lat": 51.16492,
+    "lon": 4.143546,
+    "distance_from_start_km": 63.67823154545468,
+    "label": "END"
+  },
+  "all_waypoints": [
+    {
+      "index": 0,
+      "coordinates": [
+        3.427127,
+        50.88832,
+        14.0
+      ],
+      "lat": 50.88832,
+      "lon": 3.427127,
+      "distance_from_start_km": 0.0,
+      "label": "START"
+    },
+    {
+      "index": 168,
+      "coordinates": [
+        3.538619,
+        50.942157,
+        13.0
+      ],
+      "lat": 50.942157,
+      "lon": 3.538619,
+      "distance_from_start_km": 10.844393363875506,
+      "label": "MIDPOINT_1"
+    },
+    {
+      "index": 197,
+      "coordinates": [
+        3.665533,
+        50.982317,
+        12.0
+      ],
+      "lat": 50.982317,
+      "lon": 3.665533,
+      "distance_from_start_km": 20.944139885965384,
+      "label": "MIDPOINT_2"
+    },
+    {
+      "index": 272,
+      "coordinates": [
+        3.778468,
+        51.040957,
+        5.0
+      ],
+      "lat": 51.040957,
+      "lon": 3.778468,
+      "distance_from_start_km": 31.88321662776941,
+      "label": "MIDPOINT_3"
+    },
+    {
+      "index": 309,
+      "coordinates": [
+        3.928501,
+        51.071451,
+        3.0
+      ],
+      "lat": 51.071451,
+      "lon": 3.928501,
+      "distance_from_start_km": 42.9808322723317,
+      "label": "MIDPOINT_4"
+    },
+    {
+      "index": 346,
+      "coordinates": [
+        4.053764,
+        51.107845,
+        9.0
+      ],
+      "lat": 51.107845,
+      "lon": 4.053764,
+      "distance_from_start_km": 53.1090798639949,
+      "label": "MIDPOINT_5"
+    },
+    {
+      "index": 500,
+      "coordinates": [
+        4.143546,
+        51.16492,
+        21.0
+      ],
+      "lat": 51.16492,
+      "lon": 4.143546,
+      "distance_from_start_km": 63.67823154545468,
+      "label": "END"
+    }
+  ]
+}

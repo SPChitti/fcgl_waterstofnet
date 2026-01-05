@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Training outputs (large files)
+model/training_outputs/
+
+# Large data directories
+traffic_data/
+routes/*.json
+road_features/*.json
+traffic_mapped/*.json
+
+# Keep structure but ignore content
+!routes/.gitkeep
+!road_features/.gitkeep
+!traffic_mapped/.gitkeep
+
+# Graph network data
+graph_network/*.json
+
+# Virtual environments
+env/
+venv/
+*/venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

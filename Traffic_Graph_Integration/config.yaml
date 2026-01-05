@@ -1,0 +1,51 @@
+# Traffic Graph Integration Configuration
+# Sources and Destinations for Multi-OD Flow Network
+
+locations:
+  sources:
+    S1:
+      name: "Genk Industrial Zone"
+      lat: 51.297
+      lon: 5.480
+      type: "warehouse"
+      
+    S2:
+      name: "Antwerp Port"
+      lat: 51.232
+      lon: 4.415
+      type: "port"
+      
+  destinations:
+    D1:
+      name: "Aalst"
+      lat: 50.948
+      lon: 4.038
+      type: "distribution_center"
+      
+    D2:
+      name: "Ghent"
+      lat: 51.054
+      lon: 3.717
+      type: "distribution_center"
+      
+    D3:
+      name: "Bruges"
+      lat: 51.209
+      lon: 3.224
+      type: "distribution_center"
+
+# GraphHopper settings
+graphhopper:
+  url: "http://localhost:8080/route"
+  profile: "truck"
+  alternatives: 10
+  details:
+    - "max_speed"
+    - "average_speed"
+    - "road_class"
+    - "surface"
+    - "road_environment"
+    - "average_slope"
+    - "max_slope"
+    - "toll"
+    - "track_type"
